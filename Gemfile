@@ -7,11 +7,13 @@ gem 'rails', '4.1.8'
 group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails'
+# Для Windows
+  gem 'coffee-script-source', '1.8.0' 
 end
 
 group :test do
-  gem 'selenium-webdriver', '2.35.1'
-  gem 'capybara', '2.1.0'
+  gem 'selenium-webdriver'
+  gem 'capybara'
 end
 
 # Use SCSS for stylesheets
@@ -49,3 +51,4 @@ group :production do
   gem 'pg', '0.15.1'
   gem 'rails_12factor', '0.0.2'
 end
+
